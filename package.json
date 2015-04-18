@@ -1,0 +1,24 @@
+{
+  "name": "kv-form",
+  "version": "0.0.0",
+  "description": "Create inputs for arbitrary keys and values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify example/example.js > dist/bundle.js",
+    "watch": "watchify example/example.js -o example/bundle.js -dv",
+    "demo": "browserify example/example.js > example/bundle.js && html-inline example/index.html | curl -sT- https://htmlb.in | pbcopy && echo \"Don't forget to paste the demo URL into the readme.\""
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nichoth/kv-form.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "input-pair": "https://github.com/nichoth/input-pair/tarball/master"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+  }
+}
